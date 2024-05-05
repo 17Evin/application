@@ -1,7 +1,7 @@
 # Function to upload PDF data
 def upload_data():
     uploaded_file = input("Upload Monthly Report (CSV): ")
-    if uploaded_file.endswith('.csv'):
+    if uploaded_file.endswith('Monthly report.csv'):
         with open(uploaded_file, 'r') as file:
             lines = file.readlines()
             headers = lines[0].strip().split(',')
